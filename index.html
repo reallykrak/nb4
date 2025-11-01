@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf - Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    
+    <style>
+        * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        @media print {
+            body { display: none !important; }
+        }
+        img, video, audio {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+            pointer-events: none;
+        }
+        .anti-screenshot {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            background: transparent;
+            mix-blend-mode: difference;
+            opacity: 0.01;
+        }
+    </style>
+</head>
+<body>
+    <div class="anti-screenshot"></div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <span>Yusuf</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Ana Sayfa</a>
+                <a href="#projects" class="nav-link">Projeler</a>
+                <a href="#technologies" class="nav-link">Teknolojiler</a>
+                <a href="#contact" class="nav-link">İletişim</a>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="logo.png" alt="Logo" class="logo-image">
+                    </div>
+                    <div class="discord-status">
+                        <div class="status-indicator" id="discordStatus"></div>
+                        <span class="status-text" id="discordStatusText">Yükleniyor...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-text">
+                    <h1>
+                        <span class="static-text">Hello! I'm </span>
+                        <span id="animated-name" class="animated-name">Zypheris</span>
+                    </h1>
+                    <p class="hero-subtitle">Software Developer</p>
+                </div>
+                <div class="about-me" id="aboutMeCard">
+                    <h2>About Me</h2>
+                    <div class="about-text">
+                        <p class="typing-text" id="text1"></p>
+                        <p class="typing-text" id="text2"></p>
+                        <p class="typing-text" id="text3"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">GitHub Projelerim</h2>
+            <p class="section-subtitle">Açık kaynak projelerim </p>
+            <div class="loading" id="projectsLoading">
+                <div class="spinner"></div>
+                <p>Projeler yükleniyor...</p>
+            </div>
+            <div class="projects-grid" id="projectsGrid" style="display: none;">
+            </div>
+        </div>
+    </section>
+    <section id="technologies" class="technologies">
+        <div class="container">
+            <h2 class="section-title">Teknolojiler</h2>
+            <p class="section-subtitle">Kullandığım teknolojiler ve araçlar</p>
+            <div class="tech-grid">
+                <div class="tech-card javascript">
+                    <img src="javascript.png" alt="JavaScript" class="tech-logo">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-card typescript">
+                    <img src="typescript.png" alt="TypeScript" class="tech-logo">
+                    <span>TypeScript</span>
+                </div>
+                <div class="tech-card react">
+                    <img src="react.png" alt="React" class="tech-logo">
+                    <span>React</span>
+                </div>
+                <div class="tech-card nodejs">
+                    <img src="nodejs.png" alt="Node.js" class="tech-logo">
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-card python">
+                    <img src="python.png" alt="Python" class="tech-logo">
+                    <span>Python</span>
+                </div>
+                <div class="tech-card html">
+                    <img src="html.png" alt="HTML5" class="tech-logo">
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-card css">
+                    <img src="css.png" alt="CSS3" class="tech-logo">
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-card git">
+                    <img src="git.png" alt="Git" class="tech-logo">
+                    <span>Git</span>
+                </div>
+                <div class="tech-card mongodb">
+                    <img src="mongodb.png" alt="MongoDB" class="tech-logo">
+                    <span>MongoDB</span>
+                </div>
+                <div class="tech-card mysql">
+                    <img src="mysql.png" alt="MySQL" class="tech-logo">
+                    <span>MySQL</span>
+                </div>
+                <div class="tech-card docker">
+                    <img src="docker.png" alt="Docker" class="tech-logo">
+                    <span>Docker</span>
+                </div>
+                <div class="tech-card linux">
+                    <img src="linux.png" alt="Linux" class="tech-logo">
+                    <span>Linux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="social">
+        <div class="container">
+            <h2 class="section-title">Sosyal Medya</h2>
+            <p class="section-subtitle">Benimle iletişime geçin</p>
+            <div class="social-grid">
+                <a href="https://discord.com/users/773582512647569409" class="social-card discord" target="_blank">
+                    <img src="discord.png" alt="Discord" class="social-logo">
+                    <span>Discord</span>
+                </a>
+                <a href="https://youtube.com/@zypdev" class="social-card youtube" target="_blank">
+                    <img src="youtube.png" alt="YouTube" class="social-logo">
+                    <span>YouTube</span>
+                </a>
+                <a href="https://open.spotify.com/user/31hkg7jaj6mbj37lgkd2huaeakfa" class="social-card spotify" target="_blank">
+                    <img src="spotify.png" alt="Spotify" class="social-logo">
+                    <span>Spotify</span>
+                </a>
+                <a href="https://github.com/zypheriss" class="social-card github" target="_blank">
+                    <img src="github.png" alt="GitHub" class="social-logo">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://instagram.com/ilwixi7" class="social-card instagram" target="_blank">
+                    <img src="instagram.png" alt="Instagram" class="social-logo">
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo" class="footer-logo-img">
+                    <div class="footer-info">
+                        <h3>Yusuf</h3>
+                        <p>Software Developer</p>
+                    </div>
+                </div>
+                <p class="footer-description">
+                    Modern web teknolojileri ile yenilikçi, verimli ve kullanıcı dostu dijital deneyimler yaratıyorum.
+                </p>
+                <div class="footer-social">
+                    <a href="https://github.com/zypheriss" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://discord.com/users/773582512647569409" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="mailto:zypheris@outlook.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="#projects">Projeler</a></li>
+                        <li><a href="#technologies">Teknolojiler</a></li>
+                        <li><a href="#contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> zypheris@outlook.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 - Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
